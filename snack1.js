@@ -15,3 +15,7 @@ const somma2 = function (a, b) {
 }
 
 console.log(somma2(7, 10))
+
+const somma3 = (a, b) => a + b
+
+console.log(somma3(5, 5))
