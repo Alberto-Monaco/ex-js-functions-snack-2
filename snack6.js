@@ -5,11 +5,15 @@
 
 function creaContatoreAutomatico(intervallo) {
 	let contatore = 0
-	const interval = setInterval(() => {
-		contatore++
-		console.log(contatore)
-	}, intervallo)
-	return interval
+	return () => {
+		setInterval(() => {
+			contatore++
+			console.log(contatore)
+		}, intervallo)
+	}
 }
 
-const contatore = creaContatoreAutomatico(1000)
+const conta1s = creaContatoreAutomatico(1000)
+const conta2s = creaContatoreAutomatico(2000)
+conta1s()
+conta2s()
