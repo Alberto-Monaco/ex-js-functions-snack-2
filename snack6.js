@@ -4,10 +4,16 @@
 // restituisce una funzione che avvia un setInterval, incrementando un contatore e stampandolo.
 
 function creaContatoreAutomatico(intervallo) {
+	// Inizializzo il contatore a 0
 	let contatore = 0
+
+	// Ritorno una funzione che avvia l'intervallo
 	return () => {
+		// Imposto l'intervallo che incrementa il contatore
 		setInterval(() => {
+			// Incremento il contatore
 			contatore++
+			// Stampo il valore del contatore
 			console.log(contatore)
 		}, intervallo)
 	}

@@ -5,7 +5,9 @@
 // Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script.
 
 function stampaOgniSecondo(message) {
+	// Utilizzo setInterval per eseguire una funzione ogni 1000ms (1 secondo)
 	setInterval(() => {
+		// Stampo il messaggio fornito nella console
 		console.log(message)
 	}, 1000)
 }
